@@ -2,7 +2,7 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
+    - name: test_table
       description: "A starter dbt model"
       columns:
           - name: id
@@ -10,6 +10,10 @@ models:
             tests:
                 - unique
                 - not_null
+            name: name
+            description: "None"
+            name: created_at
+            description: "None"
 
     - name: my_second_dbt_model
       description: "A starter dbt model"
